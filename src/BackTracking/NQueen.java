@@ -1,3 +1,5 @@
+package BackTracking;
+
 public class NQueen {
     static int count;
     public static boolean canPlace(int[][] board,int cr, int cc,int n){
