@@ -1,6 +1,7 @@
 package BinarySearch;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class AgressiveCows {
     public static boolean canplaced(int[] stalls,int nCows,int minDist) {
@@ -19,10 +20,14 @@ public class AgressiveCows {
         return false;
     }
     public static void main(String[] args) {
-        int[] stalls = {1,2,8,4,9};
-        int n =stalls.length;
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int cows = s.nextInt();
+        int[] stalls = new int[n];
+        for (int i = 0; i <n ; i++) {
+            stalls[i] = s.nextInt();
+        }
         Arrays.sort(stalls);
-        int cows=3;
         int l=0;
         int r = stalls[n-1]-stalls[0];
         while(r>l+1){

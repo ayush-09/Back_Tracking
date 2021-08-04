@@ -22,7 +22,7 @@ public class BookAllocation {
 
     }
     public static void main(String[] args) {
-        int[] arr= {10,20,30,40};
+        int[] arr= {12,34,67,90};
         int n=arr.length;
         int l=0;
         int r= 100;
